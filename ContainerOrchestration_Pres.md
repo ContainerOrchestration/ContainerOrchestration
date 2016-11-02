@@ -3,7 +3,11 @@ layout: false
 class: center, middle, inverse
 
 ##Container Orchestration: Which Conductor?
-###ContainerCon Europe, Berlin, Oct 2016
+<!-- TODO: REPLACE with presentation venue
+
+ ###ContainerCon Europe, Berlin, Oct 2016
+-->
+
 <!-- [.bold.green[Container Orchestration: Swarm, Mesos, Kubernetes - Which Conductor?]] -->
 <h3> <img width=120 src="images/Hewlett_Packard_Enterprise_whiteText_logo.svg" /> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Mike Bright, <img src="images/Twitter_Bird.svg" width=24 /> @mjbright </h3>
 <h3> <img width=93 height=30 src="images/RedHat_whiteText_logo.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; Haikel Guemar, <img src="images/Twitter_Bird.svg" width=24 /> @hguemar </h3>
