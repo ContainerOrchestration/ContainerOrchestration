@@ -130,9 +130,9 @@ class: center, middle
     ## History
 ]
 .right-column[
-## &mu;-OSes
+## Container-OSes
 
-Many vendors are developing &mu;-OSes, small OS (mainly Linux-based) to be the basis for container engine hosts whether they be bare-metal or virtual **host machines**.
+Many vendors are developing Container-OSes, small OS (mainly Linux-based) to be the basis for container engine hosts whether they be bare-metal or virtual **host machines**.
 
 They're small, with fast startup, use few resources and have a small attack surface and often *"atomic"* software updates.
 
@@ -150,7 +150,7 @@ Ubuntu Snappy Core|-|(Canonical)
 
 ???
 SpeakerNotes:
-- &mu;-Oses or lightweight Cloud Servers, Container OSes
+- Container-OSes or lightweight Cloud Servers
 
 - CoreOS             (CoreOS)
 - Project Atomic     (RedHat)
