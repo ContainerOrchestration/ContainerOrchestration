@@ -888,6 +888,7 @@ layout: false
 SpeakerNotes:
 
 ---
+exclude: true
 layout: false
 .left-column[
   <img src=images/docker.png width=100 /><br/>
@@ -1661,6 +1662,8 @@ Rancher lightweight
 name: section_handson
 layout: false
 class: center, middle, inverse
+exclude: true
+
 ## Hands on ...
 
 .footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
@@ -1670,6 +1673,8 @@ SpeakerNotes:
 
 ---
 layout: false
+exclude: true
+
 .left-column[
   ## Hands-on
 ]
