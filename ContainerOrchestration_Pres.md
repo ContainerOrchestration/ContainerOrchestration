@@ -970,6 +970,7 @@ Integrated in:
     - RedHat OpenShift CP
     - HPE Stackato v.40
     - Deis
+    - Microsoft Azure
 ]
 
 .footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
