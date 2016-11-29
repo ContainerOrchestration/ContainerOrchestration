@@ -281,7 +281,7 @@ class: center, middle
 .right-column[
     ## From monoliths to &mu;-services
 
-But 1000's of nodes are **unmanageable** ... aren't they?
+But 1000's of instances are **unmanageable** ...
 
 |   |   |
 |---|---|
@@ -406,14 +406,14 @@ class: center, middle
 .right-column[
 ## Getting to *"Desired State"*
 
-To manage 100's, 1000's, 10,000's of nodes we need to express *"desired state"* rather than *"do this"*.
+To manage 100's, 1000's, 10,000's of instances we need to express *"desired state"* rather than *"do this"*.
 
 
 |                 |         Imperative     |    Declarative      |
 |-----------------|:----------------------:|:-------------------:|
 |                 |                        |                     |
 | **Tell system** |       Do this          | desired state       |
-|                 | *"start a new node"*   | *"3 mysql nodes"* |
+|                 | *"start a new instance"*   | *"3 x mysql"* |
 |                 | .                      |                     |
 | **Intelligence**| Operator               | Orchestration Engine|
 |                 | .                      |                     |
@@ -864,6 +864,7 @@ SpeakerNotes:
 
 ---
 layout: false
+
 .left-column[
   <img src=images/docker.png width=100 /><br/>
   ## Docker Swarm
