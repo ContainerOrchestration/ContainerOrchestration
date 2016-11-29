@@ -3620,10 +3620,17 @@
          sodipodi:role="line"
          id="tspan13556"
          x="19.576271"
-         y="182.28813">Services </tspan><tspan
+         y="182.28813">Deployments, Services (name, LB), Pods, Containers, </tspan>
+<tspan
          sodipodi:role="line"
          x="19.576271"
          y="196.39925"
-         id="tspan13558">Labels, Selectors</tspan></text>
+         id="tspan13558">Replication Controller, ReplicaSet</tspan>
+<tspan
+         sodipodi:role="line"
+         x="19.576271"
+         y="210.39925"
+         id="tspan13558">Labels, Selectors</tspan>
+     </text>
   </g>
 </svg>
