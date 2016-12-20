@@ -1338,6 +1338,16 @@ Micro-OSes: CoreOS or Atomic
 
 
 ---
+name: section_kubernetes
+layout: false
+class: center, middle, inverse
+## Kubernetes Demo
+  <img src=images/kubernetes.png width=100 /><br/>
+
+???
+SpeakerNotes:
+
+---
 name: section_mesos
 layout: false
 class: center, middle, inverse
@@ -1348,6 +1358,7 @@ class: center, middle, inverse
 SpeakerNotes:
 
 ---
+name: section_mesos
 layout: false
 .left-column[
   <img src=images/mesos-logo.png width=100 /><br/>
@@ -1406,6 +1417,7 @@ Mesos implements the following containerizers:
 
 
 ---
+name: section_mesos
 layout: false
 .left-column[
   <img src=images/mesos-logo.png width=100 /><br/>
@@ -1429,6 +1441,7 @@ TODO: redo architecture image?
 
 
 ---
+name: section_mesos
 layout: false
 .left-column[
   <img src=images/mesos-logo.png width=100 /><br/>
@@ -1471,6 +1484,17 @@ Integrated in:
   Also used for Cassandra, ... Spark, ...
 
 ---
+name: section_mesos
+layout: false
+class: center, middle, inverse
+## Apache Mesos Demo
+  <img src=images/mesos-logo.png width=100 /><br/>
+
+???
+SpeakerNotes:
+
+---
+name: section_mesos
 layout: false
 exclude: true
 
