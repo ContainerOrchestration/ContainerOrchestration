@@ -1790,15 +1790,16 @@ SpeakerNotes:
 ---
 name: last-page
 template: inverse
-class: center, middle, inverse
+class: center, inverse
 
-# Questions?
+# Thank you - Questions?
 
-# Thank you
-
-<br/>
 <br/>
 <image width=100 src="images/Orchestration_Chaos.svg" />
+
+#### Latest slides available at:
+<a href="https://containerorchestration.github.io/ContainerOrchestration/#1">
+https://containerorchestration.github.io/ContainerOrchestration/ </a>
 
 .footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
 
