@@ -1375,6 +1375,9 @@ Mesos is used in production by:
 Mesos has Containerizers (Mesos, Docker) to isolate tasks.
 
 Unified Containerizer supports Docker and appc image formats.
+
+**MesoSphere** sells the **DC/OS** product based on **Mesos**.
+DC/OS is also an open source project.
 ]
 
 ???
@@ -1412,13 +1415,9 @@ layout: false
 
 .right-column[
   ## Architecture
-
   <!-- <img src=images/mesos_archi.jpg width=400 /><br/> -->
-  <img src=images/MesosArchi.svg width=600 /><br/>
-
-<!-- Image courtesy of
-http://mesos.apache.org/documentation/latest/architecture/ -->
-
+  <img src=images/MesosArchi.svg width=600 />
+A Mesos application provides its own scheduler and a task executor.
 ]
 
 ???
@@ -1439,11 +1438,9 @@ layout: false
 
 .right-column[
 
-<br/>
 Mesos is used in conjunction with Frameworks such as
 
-<br/>
-- For long running tasks:
+- For *long running* tasks:
     - **Marathon** (Mesosphere), Aurora or Singularity
 
 - For job orchestration:
@@ -1588,13 +1585,13 @@ layout: false
 ]
 
 .right-column[
-Docker Swarm and Kubernetes are creating rich Orchestration stacks with integrated runtimes.
+Docker Swarm, Kubernetes, Apache Mesos are all creating rich Orchestration stacks with integrated container runtimes.
 
 They're moving incredibly quicky ...
 
 They are adding features such as networking capabilities, load balancing, services, labels.
 
-They have a more 'declarative' approach
+They have a more 'declarative' approach allowing to abstract the data center as a single compute resource.
 
 They support or are looking to support different runtime engines ( * )
 
@@ -1641,6 +1638,8 @@ Advanced networking
     - Load Balancing and Service Discovery
 
 Replication
+
+**DDC** (*Docker Data Center*) commercial product, supported by HPE
 ]
 
 .footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
@@ -1659,18 +1658,22 @@ layout: false
 
 # Kubernetes
 
-Rich conceptual model
+Rich conceptual model, based on Google experience
 
 Pods as groupings of containers
 
 Labels and Selectors (for all components)
 
-Large ecosystem
-
-Networking
-    - Load Balancing and Service Discovery
+Networking - Load Balancing and Service Discovery
 
 Replication
+
+Large ecosystem with several commercial offerings:
+- Core OS Tectonic, Canonical
+- PaaS (OpenShift Container Platform, Stackato)
+
+and Public Cloud Support
+- Google GKE, Azure ACS
 
 ]
 
@@ -1702,7 +1705,7 @@ Not just containers
 
 Many frameworks available
 
-Difficult ramp-up
+(*Steeper learning curve*)
 
 ]
 
