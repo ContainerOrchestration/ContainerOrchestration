@@ -1345,7 +1345,7 @@ class: center, middle, inverse
   <img src=images/kubernetes.png width=100 /><br/>
 
 #### - <a href="https://github.com/kubernetes/minikube"/> Minikube </a> [single node cluster]
-#### - <a href="http://kubernetes.io/docs/tutorials/"/> Kubernetes Tutorial </a>
+#### - <a href="http://kubernetes.io/docs/tutorials/kubernetes-basics/"/> Kubernetes Tutorial </a>
 #### - <a href="https://github.com/kubernetes/kubernetes/tree/master/examples"/> GCP: Kubernetes Tutorial </a>
 
 ???
