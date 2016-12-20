@@ -3019,7 +3019,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.78494092"
-     inkscape:cx="477.64285"
+     inkscape:cx="550.89677"
      inkscape:cy="320.36878"
      inkscape:current-layer="layer1"
      id="namedview11926"
@@ -3174,7 +3174,7 @@
            sodipodi:role="line"
            id="tspan29247"
            x="25.423725"
-           y="69.026367"></tspan></text>
+           y="69.026367" /></text>
     </g>
     <g
        id="g29249-5"
@@ -3200,7 +3200,7 @@
            y="70.551796"
            x="34.067791"
            id="tspan29284"
-           sodipodi:role="line"></tspan></text>
+           sodipodi:role="line" /></text>
     </g>
     <g
        id="g29305">
@@ -3243,7 +3243,7 @@
            sodipodi:role="line"
            id="tspan29334">UI</tspan><tspan
            sodipodi:role="line"
-           id="tspan29336"></tspan></text>
+           id="tspan29336" /></text>
     </g>
     <rect
        style="opacity:0.93000022;fill:#1118f6;fill-opacity:0.17927171;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.04094481;stroke-opacity:1"
@@ -3374,5 +3374,67 @@
            id="tspan29357-385"
            sodipodi:role="line">Pod</tspan></text>
     </g>
+    <rect
+       style="opacity:0.93000034;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#007400;stroke-width:0.8935684;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.04094481;stroke-opacity:1"
+       id="rect32013"
+       width="3.2083693"
+       height="93.813911"
+       x="276.68427"
+       y="24.308357"
+       inkscape:transform-center-y="33.587697" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:125%;font-family:'Abyssinica SIL';-inkscape-font-specification:'Abyssinica SIL, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="263.54709"
+       y="117.95628"
+       id="text10127"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10129"
+         x="263.54709"
+         y="117.95628">flat</tspan><tspan
+         sodipodi:role="line"
+         x="263.54709"
+         y="125.01183"
+         id="tspan10131">network</tspan><tspan
+         sodipodi:role="line"
+         x="263.54709"
+         y="132.06738"
+         id="tspan10133" /></text>
+    <rect
+       style="opacity:0.91000001;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#007400;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.04094481;stroke-opacity:1"
+       id="rect10135"
+       width="10.786374"
+       height="3.955004"
+       x="267.50211"
+       y="53.238026" />
+    <rect
+       style="opacity:0.91000001;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#007400;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.04094481;stroke-opacity:1"
+       id="rect10135-7"
+       width="10.786374"
+       height="3.955004"
+       x="267.50211"
+       y="36.519146" />
+    <rect
+       style="opacity:0.91000001;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#007400;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.04094481;stroke-opacity:1"
+       id="rect10135-7-9"
+       width="10.786374"
+       height="3.955004"
+       x="267.50208"
+       y="70.675995" />
+    <rect
+       style="opacity:0.91000001;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#007400;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.04094481;stroke-opacity:1"
+       id="rect10135-7-9-3"
+       width="10.786374"
+       height="3.955004"
+       x="266.78299"
+       y="86.85556" />
+    <rect
+       style="opacity:0.91000001;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#007400;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.04094481;stroke-opacity:1"
+       id="rect10135-7-9-3-9"
+       width="10.786374"
+       height="3.955004"
+       x="266.78299"
+       y="105.91149" />
   </g>
 </svg>

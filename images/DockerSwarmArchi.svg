@@ -3142,7 +3142,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.78494092"
-     inkscape:cx="646.42514"
+     inkscape:cx="312.00507"
      inkscape:cy="372.04724"
      inkscape:current-layer="layer1"
      id="namedview11926"
@@ -3707,31 +3707,15 @@
          y="22.824203" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.28888893px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="266.9418"
-       y="24.496771"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:125%;font-family:'Abyssinica SIL';-inkscape-font-specification:'Abyssinica SIL, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="184.96536"
+       y="55.417709"
        id="text14501"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan14503"
-         x="266.9418"
-         y="24.496771"
-         style="font-size:5.64444447px">Distrib</tspan><tspan
-         sodipodi:role="line"
-         x="266.9418"
-         y="31.552326"
-         id="tspan14505"
-         style="font-size:5.64444447px">Cluster</tspan><tspan
-         sodipodi:role="line"
-         x="266.9418"
-         y="38.607883"
-         id="tspan14507"
-         style="font-size:5.64444447px">Config</tspan><tspan
-         sodipodi:role="line"
-         x="266.9418"
-         y="45.663437"
-         id="tspan14509"
-         style="font-size:5.64444447px">(quorum)</tspan></text>
+         id="tspan12501"
+         x="184.96536"
+         y="55.417709">Distrib Cluster Config (quorum)</tspan></text>
     <rect
        style="opacity:1;fill:#ea5eff;fill-opacity:0.19607843;fill-rule:nonzero;stroke:#000000;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:9.60000006, 9.60000006;stroke-dashoffset:0;stroke-opacity:0.78431373;filter:url(#filter15073-5)"
        id="rect14115-1"
