@@ -712,7 +712,9 @@ layout: false
 
 ## The Big 3 - What does Google Trends say?
 
+<a href="https://www.google.fr/trends/explore?cat=5&date=today%2012-m&q=docker%20swarm,kubernetes,mesos">
 <img src=images/TRENDS_ContainerOrchestrationEngines.png width=500 /><br/>
+</a>
 <br/>
 Clearly Kubernetes has a lead in *Google "search trends"*
 
