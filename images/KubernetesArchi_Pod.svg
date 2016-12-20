@@ -3198,8 +3198,8 @@
        id="text32049"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan32055">Shared namespaces:</tspan><tspan
+         id="tspan32059">Shared namespaces: </tspan><tspan
          sodipodi:role="line"
-         id="tspan32057">    PID, IPC, network , time sharing</tspan></text>
+         id="tspan32061">    PID, IPC, network , time sharing</tspan></text>
   </g>
 </svg>

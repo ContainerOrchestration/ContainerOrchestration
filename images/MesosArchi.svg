@@ -3180,22 +3180,9 @@
          id="tspan14020"
          x="184.83052"
          y="79.322037">. . . .</tspan></text>
-    <ellipse
-       style="opacity:1;fill:#ea00ff;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path14075"
-       cx="261.10172"
-       cy="30.762711"
-       rx="24.915253"
-       ry="22.627117" />
-    <ellipse
-       style="opacity:1;fill:#ea00ff;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path14077"
-       cx="247.75423"
-       cy="24.915253"
-       rx="28.855932"
-       ry="19.830507" />
     <g
-       id="g14083">
+       id="g14083"
+       transform="translate(-48.538685,37.392765)">
       <ellipse
          ry="5.7203388"
          rx="5.8474574"
@@ -3237,7 +3224,7 @@
          cy="21.663586"
          cx="243.20193"
          id="path14081"
-         style="opacity:1;fill:#ea00ff;fill-opacity:0.03921569;fill-rule:nonzero;stroke:#000000;stroke-width:0.20000001;stroke-miterlimit:4;stroke-dasharray:4.80000016,4.80000016;stroke-dashoffset:0;stroke-opacity:0.39215687" />
+         style="opacity:1;fill:#ea00ff;fill-opacity:0.03921569;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:4.80000016, 4.80000016;stroke-dashoffset:0;stroke-opacity:0.39215686" />
     </g>
     <rect
        style="opacity:1;fill:#ff7f2a;fill-opacity:0.19607843;fill-rule:nonzero;stroke:#000000;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:9.60000006, 9.60000005999999928;stroke-dashoffset:0;stroke-opacity:0.78431373;filter:url(#filter15073)"
@@ -3354,31 +3341,15 @@
          y="22.824203" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.28888893px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="266.9418"
-       y="7.2086344"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:125%;font-family:'Abyssinica SIL';-inkscape-font-specification:'Abyssinica SIL, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="181.3699"
+       y="51.792316"
        id="text14501"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan14503"
-         x="266.9418"
-         y="7.2086344"
-         style="font-size:5.64444448px">Distrib</tspan><tspan
-         sodipodi:role="line"
-         x="266.9418"
-         y="21.319746"
-         id="tspan14505"
-         style="font-size:5.64444448px">Cluster</tspan><tspan
-         sodipodi:role="line"
-         x="266.9418"
-         y="35.430855"
-         id="tspan14507"
-         style="font-size:5.64444448px">Config</tspan><tspan
-         sodipodi:role="line"
-         x="266.9418"
-         y="49.541969"
-         id="tspan14509"
-         style="font-size:5.64444448px">(quorum)</tspan></text>
+         id="tspan32065"
+         x="181.3699"
+         y="51.792316">Distrib Cluster Config (quorum)</tspan></text>
     <rect
        style="opacity:1;fill:#ea5eff;fill-opacity:0.19607843;fill-rule:nonzero;stroke:#000000;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:9.60000006, 9.60000006;stroke-dashoffset:0;stroke-opacity:0.78431373;filter:url(#filter15073-5)"
        id="rect14115-1"
@@ -3588,18 +3559,18 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:11.28888893px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="53.318947"
-       y="53.913391"
+       x="67.700783"
+       y="57.149303"
        id="text6362-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="53.318947"
-         y="53.913391"
+         x="67.700783"
+         y="57.149303"
          style="font-size:5.64444447px"
          id="tspan6536">Offer</tspan><tspan
          sodipodi:role="line"
-         x="53.318947"
-         y="60.968948"
+         x="67.700783"
+         y="64.204865"
          id="tspan6366-2"
          style="font-size:5.64444447px" /></text>
     <path
@@ -3622,18 +3593,18 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:11.28888893px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="18.863352"
-       y="46.04871"
+       x="20.661081"
+       y="41.374615"
        id="text6362-8-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="18.863352"
-         y="46.04871"
+         x="20.661081"
+         y="41.374615"
          style="font-size:5.64444447px"
          id="tspan6536-0">Register</tspan><tspan
          sodipodi:role="line"
-         x="18.863352"
-         y="53.104263"
+         x="20.661081"
+         y="48.430172"
          id="tspan6366-2-6"
          style="font-size:5.64444447px" /></text>
     <text
@@ -3661,7 +3632,7 @@
          y="131.48831"
          style="font-size:8.46666718px">Worker (agent)</tspan></text>
     <g
-       transform="translate(-13.955378,0.88586324)"
+       transform="matrix(1.0505257,0,0,0.99988928,-18.943535,1.2575347)"
        id="g5821">
       <rect
          y="44.760853"
