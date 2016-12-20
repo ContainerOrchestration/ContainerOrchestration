@@ -3060,9 +3060,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3374118"
-     inkscape:cx="312.7238"
-     inkscape:cy="461.82982"
+     inkscape:zoom="1"
+     inkscape:cx="498.61784"
+     inkscape:cy="375.74034"
      inkscape:current-layer="layer1"
      id="namedview11926"
      showgrid="false"
@@ -3803,5 +3803,26 @@
          x="1.8991904"
          y="151.33611"
          style="font-size:8.46666718px">Tasks:</tspan></text>
+    <g
+       id="g5821">
+      <rect
+         y="44.760853"
+         x="20.591602"
+         height="129.51819"
+         width="277.24057"
+         id="rect5806"
+         style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#374185;stroke-width:0.57599998;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:1.72799995, 1.72799995;stroke-dashoffset:0.57599998;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5817"
+         y="53.93111"
+         x="22.295555"
+         style="font-style:normal;font-weight:normal;font-size:11.28888893px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="53.93111"
+           x="22.295555"
+           id="tspan5819"
+           sodipodi:role="line">Cluster</tspan></text>
+    </g>
   </g>
 </svg>
