@@ -421,7 +421,7 @@ To manage 100's, 1000's, 10,000's of instances we need to express *"desired stat
 | **Flexibility** | Best                   | Least               |
 |                 | .                      |                     |
 
-It is not longer feasible for an operator to
+It is no longer feasible for an operator to
 - know the resources available (e.g. SSD/HDD, GPU, ...)
 - react to failure, know when to scale ...
 
