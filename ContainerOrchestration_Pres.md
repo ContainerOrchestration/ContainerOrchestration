@@ -1154,6 +1154,57 @@ Services:
 
 ---
 layout: false
+.left-column[
+  <img src=images/kubernetes.png width=100 /><br/>
+  ## Kubernetes
+  .footnote[.red[] [kubernetes.io](https://kubernetes.io)]
+]
+
+.right-column[
+## Architecture - Master Nodes
+
+  <img src=images/KubernetesArchi_MasterNodes.svg width=600 />
+  <!-- <img src=images/MyKube.svg width=300 /><br/> -->
+
+]
+
+.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+---
+layout: false
+.left-column[
+  <img src=images/kubernetes.png width=100 /><br/>
+  ## Kubernetes
+  .footnote[.red[] [kubernetes.io](https://kubernetes.io)]
+]
+
+.right-column[
+## Architecture - Worker Nodes
+
+  <img src=images/KubernetesArchi_SlaveNodes.svg width=600 />
+  <!-- <img src=images/MyKube.svg width=300 /><br/> -->
+
+]
+
+.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+---
+layout: false
+.left-column[
+  <img src=images/kubernetes.png width=100 /><br/>
+  ## Kubernetes
+  .footnote[.red[] [kubernetes.io](https://kubernetes.io)]
+]
+
+.right-column[
+## Architecture - Pods
+
+  <img src=images/KubernetesArchi_Pod.svg width=600 />
+  <!-- <img src=images/MyKube.svg width=300 /><br/> -->
+
+]
+
+.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+---
+layout: false
 exclude: true
 
 .left-column[
@@ -1306,14 +1357,12 @@ layout: false
 
 .right-column[
 
+<br/>
 The most proven orchestrator today, exists since 2009.
-
-<br/> <br/>
+<br/>
 Can scale to ~ 10,000 nodes.
 
-<br/> <br/>
-Used in production by:
-
+Mesos is used in production by:
 - Uber
 - Twitter
 - Paypal
@@ -1323,7 +1372,9 @@ Used in production by:
 - Groupon
 - Netflix
 
-Supports Containerizers to isolate tasks
+Mesos has Containerizers (Mesos, Docker) to isolate tasks.
+
+Unified Containerizer supports Docker and appc image formats.
 ]
 
 ???
