@@ -310,6 +310,14 @@ class: center, middle, inverse
 
 <img width=600 src="images/Orchestration.jpg" />
 
+
+*Viktor Farcic, senior consultant at CloudBees*
+
+A significant change in 2017 will be focused not so much around running containers, but scheduling them inside clusters. Solutions like Docker Swarm, Kubernetes, Mesos, etc. will become mainstream. We will see more solutions that will go beyond simple scheduling. We’ll see the rise of self-healing systems. In 2017, the battle for the “uber orchestrator” will become much more prominent.
+
+- See more at: http://sdtimes.com/whats-horizon-2017/
+
+
 ---
 layout: false
 class: center, middle
