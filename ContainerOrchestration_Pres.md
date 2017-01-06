@@ -138,7 +138,7 @@ They're small, with fast startup, use few resources and have a small attack surf
 
 OS||Vendor
 -|-|-
-CoreOS|-|(CoreOS)
+CoreOS Linux|-|(CoreOS)
 Project Atomic|-|(RedHat)
 RancherOS|-|(Rancher Labs)
 Photon|-|(VMWare)
@@ -1342,7 +1342,7 @@ IaaS: on GCE ($$$), GKE, AWS, OpenStack, Azure
 PaaS: OpenShift ContainerPlatform
 Local: Vagrant, Ansible,
 Kubernetes The Hard Way !
-Micro-OSes: CoreOS or Atomic
+Container-OSes: CoreOS Linux or Atomic
 
 
 ---
