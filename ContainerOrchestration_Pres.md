@@ -1229,6 +1229,39 @@ layout: false
 .footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
 ---
 layout: false
+.left-column[
+  <img src=images/kubernetes.png width=100 /><br/>
+  ## Kubernetes
+  .footnote[.red[] [kubernetes.io](https://kubernetes.io)]
+]
+
+.right-column[
+Kubernetes Concepts
+- Pod
+  - smallest unit: 1 or more containers on the same IP
+- Replication Controller & ReplicaSet (NG)
+  - Ensures that a given number of pods run
+- Deployment
+  - Declaratively manage ReplicaSets, rolling upgrade
+- Service
+  - addressable IP, load-balancing
+- Labels
+  - Key/value pairs which can be attached to objects
+- Selectors
+  - Used to select a group of objects by label
+- Secrets
+  - Small amounts of sensitive info (certs., keys, ..)
+- ConfigMaps
+  - Dynamically loadable config (k-v pairs, or json)
+- DaemonSets
+  - Ensure a pod runs on all (or subset of) nodes
+- Jobs
+  - Short-lived pods, e.g. for batch jobs
+
+]
+
+---
+layout: false
 exclude: true
 
 .left-column[
