@@ -310,6 +310,8 @@ class: center, middle, inverse
 
 <img width=600 src="images/Orchestration.jpg" />
 
+???
+SpeakerNotes:
 
 *Viktor Farcic, senior consultant at CloudBees*
 
