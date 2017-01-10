@@ -969,7 +969,17 @@ Started Oct 2014, reached v1.0 in July 2015, now at v1.4
 Managed by the Cloud Native Computing Foundation https://cncf.io/
 
 Commercial offerings from CoreOS (Tectonic) and Canonical
+]
 
+---
+layout: false
+.left-column[
+  <img src=images/kubernetes.png width=100 /><br/>
+  ## Kubernetes
+  .footnote[.red[] [kubernetes.io](https://kubernetes.io)]
+]
+
+.right-column[
 Integrated in:
 - GKE (Google Container Engine)
 - OpenStack above Kubernetes
@@ -981,6 +991,12 @@ Integrated in:
     - HPE Stackato v.40
     - Deis
     - Microsoft Azure (Azure Container Service)
+
+Many tools and add-ons available
+- Dashboard
+- Prometheus (monitoring)
+- Heapster (monitoring)
+- Helm (package manager)
 ]
 
 .footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
