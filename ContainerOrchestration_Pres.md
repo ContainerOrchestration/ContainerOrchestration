@@ -132,18 +132,20 @@ class: center, middle
 .right-column[
 ## Container-OSes
 
-Many vendors are developing Container-OSes, small OS (mainly Linux-based) to be the basis for container engine hosts whether they be bare-metal or virtual **host machines**.
+Vendors are developing Container-OSes, small OS (mainly Linux-based) for container engine hosts (bare-metal or virtual **host machines**).
 
-They're small, with fast startup, use few resources and have a small attack surface and often *"atomic"* software updates.
+They're small, fast to boot, use few resources, have a small attack surface and often *"atomic"* software updates.
 
 OS||Vendor
 -|-|-
-CoreOS Linux|-|(CoreOS)
+Alpine Linux|-|()
+Container Linux|-|(CoreOS)
 Project Atomic|-|(RedHat)
 RancherOS|-|(Rancher Labs)
 Photon|-|(VMWare)
 Nano Server OS|-|(Microsoft)
 Ubuntu Snappy Core|-|(Canonical)
+MicroOS |-|(Suse)
 
 .bold[.green[...Unikernels]]
 ]
