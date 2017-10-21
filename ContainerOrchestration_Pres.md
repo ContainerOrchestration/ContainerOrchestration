@@ -2,16 +2,19 @@ name: title_inversed_whiteText
 layout: false
 class: center, middle, inverse
 
-##Container Orchestration: Which Conductor?
-<!-- TODO: REPLACE with presentation venue
+##Container Orchestration: The State of Play
 
- ###ContainerCon Europe, Berlin, Oct 2016
+###Open Source Summit Europe, Prague, Oct 2017
+
+<br/> <br/> <br/>
+<br/> <br/> <br/>
+<h3> <img width=120 src="images/Hewlett_Packard_Enterprise_whiteText_logo.svg" /> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Mike Bright, <img src="images/Twitter_Bird.svg" width=24 /> @mjbright </h3>
+
+<!--
+    <h3> <img width=93 height=30 src="images/RedHat_whiteText_logo.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; Haikel Guemar, <img src="images/Twitter_Bird.svg" width=24 /> @hguemar </h3>
+    <h3> <img width=93 height=30 src="images/RedHat_whiteText_logo.svg" /> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Mario Loriedo, <img src="images/Twitter_Bird.svg" width=24 /> @mariolet </h3>
 -->
 
-<!-- [.bold.green[Container Orchestration: Swarm, Mesos, Kubernetes - Which Conductor?]] -->
-<h3> <img width=120 src="images/Hewlett_Packard_Enterprise_whiteText_logo.svg" /> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Mike Bright, <img src="images/Twitter_Bird.svg" width=24 /> @mjbright </h3>
-<h3> <img width=93 height=30 src="images/RedHat_whiteText_logo.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; Haikel Guemar, <img src="images/Twitter_Bird.svg" width=24 /> @hguemar </h3>
-<h3> <img width=93 height=30 src="images/RedHat_whiteText_logo.svg" /> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Mario Loriedo, <img src="images/Twitter_Bird.svg" width=24 /> @mariolet </h3>
 
 ???
 SpeakerNotes:
@@ -55,7 +58,7 @@ I'm not an expert in this fast moving field, but I hope to give you an overview 
 
 Everything I tell you may be factual today, but will surely be false in a few months as these fast moving projects vie for position.
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 
 
 ---
@@ -81,13 +84,14 @@ popularized the technology by making containers so easy to use and share.
 ---
 layout: false
 class: center, middle
+exclude: true
 
 
 So let's first look at recent container history ...
 
 <img width=800 src="images/timeline.svg" />
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -122,6 +126,63 @@ DONE??: image showing "growth" (?) of containers ...
 #### LXC:
 http://www.ibm.com/developerworks/library/l-lxc-containers/
 
+
+---
+layout: false
+class: center, middle, inverse
+    ## The evolution from Monoliths to &mu;-Services
+
+???
+SpeakerNotes:
+
+A quite different concept with the same goals of small OS, with small attack surface.
+
+---
+layout: false
+class: center, middle
+    ## From monoliths to &mu;-services
+
+
+<img width=600 height=200 src="images/HistoryOfContainers.PNG" />
+
+.footnote[.vlightgray[ @mjbright ]]
+???
+SpeakerNotes:
+
+Remember when **high availability** meant this Active/Standby "Pets"
+
+then N+1 Active/Standby, possibly as part of an 3-tier model with load-balancer in front
+
+then VMs
+
+then containers
+
+we're still waiting for Unikernels,  but they will come for some specialist uses
+
+and now "Serverless" ...
+
+Note that the tendency is to
+- remove the burden of managing physical, or even virtual, systems
+- have the developer focus on his business logic not the infrastructure
+- achieve greater agility to develop, test, deploy, maintain, scale
+- less upfront CAPEX investment on hardware
+- greater efficiency through mutualisation of resources
+-  decomposition of services into &mu;-services
+  - micro-services allow to scale components of a service independently - more efficient
+  - abstract away the hardware/VMs
+
+
+Container solutions such as Docker go beyond the isolation capabilities of LXC
+by providing simple to use tools to enable packaging of apps with their dependencies allowing
+portable applications between systems.
+
+Containers are lightweight
+
+Versioned images containing all dependancies can be shared
+
+Containers allow to use the same application binaries on development, test and production systems whether that be on a laptop, server or in the cloud.
+
+It's a no brainer for developers, who can build and share their own images
 
 ---
 layout: false
@@ -183,99 +244,6 @@ RPM+OSTree: Atomic host OS upgrades+rollback
 
 ---
 layout: false
-class: center, middle, inverse
-    ## &mu;-Services
-
-???
-SpeakerNotes:
-
-A quite different concept with the same goals of small OS, with small attack surface.
-
----
-layout: false
-class: center, middle
-.left-column[
-    ## &mu;-services
-]
-.right-column[
-    ## From monoliths to &mu;-services
-Remember when **high availability** meant this ...?
-
-<img width=600 height=200 src="images/Active-Standby.svg" />
-
-Servers running **monolithic applications** in **Active-Standby** modes,
-as 1+1, N+1, or N+M or split across 3 tiers.
-
-Scaling meant to **"scale up"** by adding CPU, RAM, disk.
-But there's a limit to this ... then you have to **"scale out"**
-]
-
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
-???
-SpeakerNotes:
-
-But there's a limit to scaling up ... then you have to manage your application across multiple nodes which means
-orchestration, load balancing, monitoring across nodes.
-
-TODO: schema to demonstrate breaking down of monoliths to N-tier allowing
-      flexibility to scale out, possibility of better h/w utilisation
-
-#### What are Microservices?
-
-Microservices are a software architecting pattern that allows software to be developed into relatively small, distinct components.
-Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application.
-Each individual distinct component, or microservice, can then be designed, developed, and managed independently.
-This allows for distributed ownership of a large application across a large organization, with each microservice owned by a specific team.
-
-
----
-layout: false
-class: center, middle
-.left-column[
-    ## &mu;-services
-]
-.right-column[
-    ## From monoliths to &mu;-services
-
-#### Then came &mu;-services ..
-
-As the industry moved to virtualized micro-services this allowed to obtain greater efficiencies (higher utilisation of resources) and the redesign of applications allows to scale out and achieve high availability.
-
-Containers facilitate this move, allowing faster scaling and even greater efficiencies with less redundancy (no OS to reproduce).
-
-]
-
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
-???
-SpeakerNotes:
-
-
----
-layout: false
-.left-column[
-    ## &mu;-services
-]
-.right-column[
-## How containers help?
-
-Container solutions such as Docker go beyond the isolation capabilities of LXC by providing simple to use tools to enable packaging of apps with their
-dependencies allowing portable applications between systems.
-
-Containers are lightweight
-
-Versioned images containing all dependancies can be shared
-
-Containers allow to use the same application binaries on development, test and production systems whether that be on a laptop, server or in the cloud.
-
-It's a no brainer for developers, who can build and share their own images
-]
-
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
-???
-SpeakerNotes:
-
----
-layout: false
 class: center, middle
 .left-column[
     ## &mu;-services
@@ -287,13 +255,13 @@ But 1000's of instances are **unmanageable** ...
 
 |   |   |
 |---|---|
-| We can't take care of our | <img width=100 height=120 src="images/johnny-automatic-sad-dog-with-a-broken-leg.svg" />, |
-| so we have to treat them like | <img width=100 height=120 src="images/Holstein-Cow.svg" /> |
+| We can't take care of our pets | <img width=60 height=60 src="images/johnny-automatic-sad-dog-with-a-broken-leg.svg" />, |
+| so we have to treat them like cattle | <img width=60 height=60 src="images/Holstein-Cow.svg" /> |
 
 that's cloud native !
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -308,7 +276,7 @@ This is not to say that you cannot have system containers also ...
 name: section_coes
 layout: false
 class: center, middle, inverse
-## So we need .cyan[container orchestration]
+## So we need .cyan[Container Orchestration]
 
 <img width=600 src="images/Orchestration.jpg" />
 
@@ -324,22 +292,23 @@ A significant change in 2017 will be focused not so much around running containe
 
 ---
 layout: false
-class: center, middle
-.left-column[
-    ## Orchestration
-]
-.right-column[
+class: left, middle
+
 ## What was Container Orchestration again?
 
-- Architecture - Composition & Stitching
-- Workflows & Policies to
-    - Scale in/out (maybe automatically)
-    - Place workloads for
-        - load balancing, fault tolerance, resource optimization
-    - Adapt to faults
+.green[Cluster management]: Distribution of .blue[tasks] across a cluster of nodes such as a DataCenter.
+<br/>
+.green[Placement & Routing]: Task placement, interconnection and scaling to achieve fault tolerance, optimisation and load balancing
+<br/>
+.green[Monitoring]: Detecting faults through health/liveness checks, monitoring resource utilisation
+<br/>
+.green[Resources]: Manage compute, network and storage resources
+<br/>
+.green[Other]: Logging, secrets management, rolling updates ...
 
+<center>
 <img src=images/OrchestrationGenericArchi.svg width=500 />
-]
+</center>
 
 ???
 SpeakerNotes:
@@ -411,14 +380,11 @@ _Cloud service orchestration consists of these elements:[citation needed]
 
 ---
 layout: false
-class: center, middle
-.left-column[
-    ## Orchestration
-]
-.right-column[
-## Getting to *"Desired State"*
+class: left, middle
 
-To manage 100's, 1000's, 10,000's of instances we need to express *"desired state"* rather than *"do this"*.
+## Orchestration: Getting to *"Desired State"*
+
+To manage 1,000's of instances we need to express .green[*"desired state"*] rather than *"do this"*.
 
 
 |                 |         Imperative     |    Declarative      |
@@ -434,14 +400,13 @@ To manage 100's, 1000's, 10,000's of instances we need to express *"desired stat
 |                 | .                      |                     |
 
 It is no longer feasible for an operator to
-- know the resources available (e.g. SSD/HDD, GPU, ...)
+- know the resources available on each node (e.g. SSD/HDD, GPU, ...)
 - react to failure, know when to scale ...
 
 
-]
 
+.footnote[.vlightgray[ @mjbright ]]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
 ???
 SpeakerNotes:
 
@@ -480,18 +445,19 @@ SpeakerNotes:
 ---
 layout: false
 .left-column[
-    ## Orchestration
+    <!-- ## Orchestration -->
   <img src=images/docker.png width=100 /><br/>
   <img src=images/mesos-logo.png width=100 /><br/>
   <img src=images/kubernetes.png width=100 /><br/>
+<!--
   <img width=120 src="images/Rancher-Logo-Final-300x180.png" /> <br/>
   <img width=120 src="images/CoreOS.svg" /> <br/>
-  <!-- <img width=120 src="images/nomad-b706442f.svg" /> blank on white bg -->
   <img width=90 src="images/Nomad_logo.png" />
+-->
 ]
 
 .right-column[
-  ## The Big 3 - Main Orchestration Choices
+  ## The Orchestration Choices
 
 - Docker Swarm ("Swarm Mode")
 
@@ -502,18 +468,16 @@ layout: false
 --
 .right-column[
 #### ... more Choices ...
-- Rancher &nbsp; &nbsp; (Rancher Labs)
-
-- Fleet &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (CoreOS)
-
 - Nomad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (HashiCorp)
+- Kontena &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Kontena)
+- Cattle &nbsp; &nbsp; (Rancher Labs)
+- Fleet &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (CoreOS)
+- Cloud Providers &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (AWS ECS, Azure ACS, Google GKE)
 
-- Kontena &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-- OpenStack Magnum
+<!-- - OpenStack Magnum -->
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -714,7 +678,7 @@ Nomad: Nomad is a cluster manager, designed for both long lived services and sho
 ---
 layout: false
 .left-column[
-    ## Orchestration
+    <!-- ## Orchestration -->
   <img src=images/docker.png width=100 /><br/>
   <img src=images/mesos-logo.png width=100 /><br/>
   <img src=images/kubernetes.png width=100 /><br/>
@@ -722,7 +686,7 @@ layout: false
 
 .right-column[
 
-## The Big 3 - What does Google Trends say?
+## The Big 3 - Google Trends (2016)
 
 <a href="https://www.google.fr/trends/explore?cat=5&date=today%2012-m&q=docker%20swarm,kubernetes,mesos">
 <img src=images/TRENDS_ContainerOrchestrationEngines.png width=500 /><br/>
@@ -731,6 +695,37 @@ layout: false
 Clearly Kubernetes has a lead in *Google "search trends"*
 
 But we can expect *"Docker Swarm"* to make quick progress thanks to the new *"swarm mode"*
+
+<br/>
+]
+
+???
+SpeakerNotes:
+
+
+---
+layout: false
+.left-column[
+    <!-- ## Orchestration -->
+  <img src=images/docker.png width=100 /><br/>
+  <img src=images/mesos-logo.png width=100 /><br/>
+  <img src=images/kubernetes.png width=100 /><br/>
+]
+
+.right-column[
+
+## The Big 3 - Google Trends (2017)
+
+<!-- <a href="https://www.google.fr/trends/explore?cat=5&date=today%2012-m&q=docker%20swarm,kubernetes,mesos"> </a> -->
+<img src=images/TRENDS_ContainerOrchestrationEngines_2017.png width=500 /><br/>
+<br/>
+Clearly Kubernetes is extending its lead in *Google "search trends"*
+
+This is unsurprising given several recent announcements:
+- AWS joined CNCF
+- Docker announced they will support Swarm and Kubernetes
+- Mesosphere updated their Kubernetes integration
+- Google/VMWare/Pivotal agreement
 
 <br/>
 ]
@@ -759,31 +754,27 @@ layout: false
 
 .right-column[
 
-<br/>
-
 |    |    | |
 |:---:|:---:|:---|
 |Dec 2014 |   ...    | **Docker Swarm** is announced <br/>  |
-|         |        | Orchestration using Docker Compose <br><br> |
+|         |        | Orchestration using Docker Compose <br/><br/> |
 |Jun 2016 |   ...    | **Swarm Toolkit** released |
-|         |        | OpenSource Orchestration Toolkit <br><br> |
-|Jun 2016 |   ...    | **<u><font color=#3377CC>Swarm Mode</font></u>** announced |
-|         |        | Orchestration integrated into Docker Engine |
+|         |        | OpenSource Orchestration Toolkit <br/><br/> |
+|Jun 2016 |   ...    | **Swarm Mode** announced |
+|         |        | Orchestration integrated into Docker 1.12+ Engine <br/><br/> |
+|Oct 2017 |   ...    | **Future Kubernetes support** announced |
+|         |        | Orchestration integrated into Docker Engine <br/> <br/> |
 
-*Docker 1.12*  is the first release to integrate **"Swarm Mode"**
-The original *Docker Swarm* is maintained for legacy use.
-
-*"Swarm Mode"* is a revolution bringing:
+Swarm Mode brought:
 - Orchestration directly in the Docker Engine
-- Advanced networking features
-    - mesh network, vxlan
-- Load balancing
-- Service Discovery
-- *Docker* traditional ease of use
+- Advanced networking features - mesh network, vxlan
+- Load balancing, Service Discovery
+- all with the traditional *Docker* ease of use
 
+Soon Kubernetes and Swarm will be available as orchestrators, managed from familiar Docker cli, apis.
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -805,23 +796,72 @@ The same ease of use we're accustomed to from Docker !
 ---
 layout: false
 .left-column[
+    <img src=images/docker.png width=100 /><br/>
+    ## Docker Swarm
+    .footnote[.red[][docker.com](https://docker.com)]
+]
+
+.right-column[
+  ## Architecture
+
+  <img src=images/DockerSwarmArchi.svg width=600 />
+Tasks are containers (today)
+<br/>
+Stacks are groups of services
+]
+
+.footnote[.vlightgray[ @mjbright ]]
+???
+SpeakerNotes:
+
+---
+layout: false
+.left-column[
   <img src=images/docker.png width=100 /><br/>
   ## Docker Swarm
   .footnote[.red[] [docker.com](https://docker.com)]
 ]
 
 .right-column[
-  ## Architecture
+  ## Networks
 
-  <!-- <img src=images/docker_swarm_archi.png width=600 /><br/> -->
-  <img src=images/DockerSwarmArchi.svg width=600 /><br/>
+CNM: Container Networking Model (libnetwork)
+
+**NOTE**: In future will provide CNI (CNCF/Kubernetes)
+
+- null
+- bridge
+- overlay
+- macvlan
+- network plugins
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
-TODO: replace image ...
+---
+layout: false
+.left-column[
+  <img src=images/docker.png width=100 /><br/>
+  ## Docker Swarm
+  .footnote[.red[] [docker.com](https://docker.com)]
+]
+
+.right-column[
+  ## Storage
+
+- implicit volumes - no persistence
+- implicit named volumes - no persistence
+- explicit volumes - persistence
+- explicit volumes - persistence
+
+]
+
+.footnote[.vlightgray[ @mjbright ]]
+???
+SpeakerNotes:
+
 ---
 layout: false
 
@@ -856,7 +896,7 @@ Join a new Master node to the swarm:
 ```
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -893,51 +933,38 @@ layout: false
 
   - Make a rolling update of the service
 
+  - .red[Rollback]
+
   - Drain a node of the cluster
+
+  - .red[Stack Creation]
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 
 ???
 SpeakerNotes:
 
 ---
-exclude: true
+name: section_docker
 layout: false
-.left-column[
+class: left, middle, inverse
+
+<center>
+<h2> Docker Swarm - Hands-On </h2>
   <img src=images/docker.png width=100 /><br/>
-  ## Docker Swarm
-  .footnote[.red[] [docker.com](https://docker.com)]
-]
+</center>
 
-.right-column[
+Tools:
+- .magenta[ play-with-docker.com "PWD"]
+<br/>
+- .magenta[ katacoda.com]
+<br/>
+- .magenta[ docker-machine ] - tutorials, used locally or with cloud providers
 
-## Getting started
+Tutorials:
+- [.magenta[training.play-with-docker.com]]
 
-<br/>
-**<u>Bruno Cornecs' Docker 101 Lab </u>**
-<br/>
-New to Docker?  Come to http://sched.co/7oHf
-<br/>
-- **Docker 101 Lab, 9am - Friday 7th October**
-
-https://github.com/bcornec/Labs/tree/master/Docker
-
-<br/>
-Followed by ..
-<br/>
-<br/>
-**<u>Jerome Petazzoni's Orchestration Workshop</u>**
-<br/>
-or more advanced?  Come to http://sched.co/7oHx
-<br/>
-- **Orchestrating Containers in Production at Scale with Docker Swarm, Friday 7th October**
-
-https://github.com/jpetazzo/orchestration-workshop
-
-]
-
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
 ???
 SpeakerNotes:
 
@@ -964,15 +991,22 @@ layout: false
 ]
 
 .right-column[
+
+<br/> <br/>
+
 Google created based on extensive experience running containers internally
 ~ billions of containers a year
 
 
-Started Oct 2014, reached v1.0 in July 2015, now at v1.4
+Started Oct 2014, reached v1.0 in July 2015, now at v1.8
 
-Managed by the Cloud Native Computing Foundation https://cncf.io/
+Managed by the Cloud Native Computing Foundation
+<br/>
+CNCF: https://cncf.io/
 
 Commercial offerings from CoreOS (Tectonic) and Canonical
+
+Adopted by many others, integrated into their platforms.
 ]
 
 ---
@@ -984,26 +1018,29 @@ layout: false
 ]
 
 .right-column[
-Integrated in:
+Integrated into:
 - GKE (Google Container Engine)
+- Microsoft Azure (Azure Container Service)
+- VMWare/Pivotal/Google
 - OpenStack above Kubernetes
     - Stackanetes (CoreOS, uses Tectonic)
         - Self healing OpenStack demo
-    - Mirantis (OpenStack CI/CD based on Kolla)
-- Various PaaS:
-    - RedHat OpenShift CP
-    - HPE Stackato v.40
-    - Deis
-    - Microsoft Azure (Azure Container Service)
+    - Mirantis, Oracle (OpenStack CI/CD based on Kolla)
+
+Various PaaS:
+- RedHat OpenShift CP
+- &mu;-Focus Stackato v4.0
+- Deis (now Microsoft)
 
 Many tools and add-ons available
 - Dashboard
 - Prometheus (monitoring)
 - Heapster (monitoring)
 - Helm (package manager)
+- kubeadm, kops, ...
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1038,11 +1075,12 @@ layout: false
 ## Architecture
 
   <img src=images/KubernetesArchi.svg width=600 />
-  <!-- <img src=images/MyKube.svg width=300 /><br/> -->
+
+Deployments, Services (name, LB), Pods, Containers, ReplicaSets, DaemonSet, CronJob
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1196,7 +1234,7 @@ layout: false
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ---
 layout: false
 .left-column[
@@ -1213,7 +1251,7 @@ layout: false
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ---
 layout: false
 .left-column[
@@ -1230,7 +1268,7 @@ layout: false
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ---
 layout: false
 .left-column[
@@ -1243,7 +1281,7 @@ layout: false
 Kubernetes Concepts
 - Pod
   - smallest unit: 1 or more containers on the same IP
-- Replication Controller & ReplicaSet (NG)
+- ReplicaSet
   - Ensures that a given number of pods run
 - Deployment
   - Declaratively manage ReplicaSets, rolling upgrade
@@ -1304,7 +1342,7 @@ They act as basic load balancers.
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1362,41 +1400,10 @@ Step2
 ```
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 
 ???
 SpeakerNotes:
-
----
-layout: false
-exclude: true
-
-.left-column[
-  <img src=images/kubernetes.png width=100 /><br/>
-  ## Kubernetes
-  .footnote[.red[] [kubernetes.io](https://kubernetes.io)]
-]
-
-.right-column[
-## Getting started
-An excellent place to start is with the following tutorials
-
-- minikube?
-- ...
-]
-
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
-???
-SpeakerNotes:
-
-TODO: See "HPE Kubernetes" references for labs/tutorials
-
-IaaS: on GCE ($$$), GKE, AWS, OpenStack, Azure
-PaaS: OpenShift ContainerPlatform
-Local: Vagrant, Ansible,
-Kubernetes The Hard Way !
-Container-OSes: CoreOS Linux or Atomic
-
 
 ---
 name: section_kubernetes
@@ -1405,12 +1412,61 @@ class: center, middle, inverse
 ## Kubernetes Demo
   <img src=images/kubernetes.png width=100 /><br/>
 
-#### - <a href="https://github.com/kubernetes/minikube"/> Minikube </a> [single node cluster]
-#### - <a href="http://kubernetes.io/docs/tutorials/kubernetes-basics/"/> Kubernetes Tutorial </a>
-#### - <a href="https://github.com/kubernetes/kubernetes/tree/master/examples"/> GCP: Kubernetes Tutorial </a>
 
 ???
 SpeakerNotes:
+
+---
+name: section_kubernetes
+layout: false
+
+.left-column[
+  <img src=images/kubernetes.png width=100 /><br/>
+  ## Kubernetes
+]
+
+.right-column[
+<br/>
+## Demo
+  - Creation of a Pod
+
+  - Scaling of Pod
+
+  - Exposing as a Service
+
+  - Make a rolling update of the service
+
+  - .red[Rollback]
+
+  - Drain a node of the cluster
+
+  - .red[Stack Creation]
+]
+
+.footnote[.vlightgray[ @mjbright ]]
+
+???
+SpeakerNotes:
+
+---
+name: section_kubernetes
+layout: false
+class: left, middle, inverse
+
+<center>
+<h2> Kubernetes - Hands-On </h2>
+  <img src=images/kubernetes.png width=100 /><br/>
+</center>
+
+Tools:
+- .magenta[ katacoda.com]
+- .magenta[ play-with-kubernetes.com "PWK"]
+- .magenta[ minikube ] - Single node cluster: tutorials, used locally with several hypervisors
+- .magenta[ minishift ] - Single node OpenShift cluster: similar to Minikube+
+
+Tutorials:
+- .magenta[ Basics ] - http://kubernetes.io/docs/tutorials/kubernetes-basics/
+- .magenta[ GCP ] - https://github.com/kubernetes/kubernetes/tree/master/examples
 
 ---
 name: section_mesos
@@ -1498,7 +1554,7 @@ A Mesos application provides its own scheduler and a task executor.
 ]
 
 ???
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 SpeakerNotes:
 
 TODO: redo architecture image?
@@ -1532,7 +1588,7 @@ Mesos is used in conjunction with Frameworks such as
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1585,79 +1641,52 @@ Step2
 ```
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
 ---
+name: section_mesos
 layout: false
-exclude: true
 
 .left-column[
   <img src=images/mesos-logo.png width=100 /><br/>
-  ## Apache Mesos
-  .footnote[.red[] [mesos.apache.org](http://mesos.apache.org/)]
+  ## Mesos
 ]
 
 .right-column[
+<br/>
+## Demo
+  - TODO ...
 
-## Getting started
-An excellent place to start is with the following tutorials
-
-- Mesos
-    - minimesos
-
-- Mesosphere
-
-
+  - .red[Stack Creation]
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
+
 ???
 SpeakerNotes:
 
-TODO: Add links to more Mesos tutorials, startup systems ...
-
 ---
-name: section_players
+name: section_mesos
 layout: false
-class: center, middle, inverse
-exclude: true
-## Industry Players
+class: left, middle, inverse
 
----
-layout: false
-exclude: true
-.left-column[
-  ## Players
-]
+<center>
+<h2> Apache Mesos - Hands-On </h2>
+  <img src=images/mesos-logo.png width=100 /><br/>
+</center>
 
-.right-column[
-## Choices made by Industry Players
+Tools:
+- .magenta[ katacoda.com]
+- .magenta[ minimesos ] - tutorials, from Container Solutions
+- .magenta[ DC/OS ] - From Mesosphere
 
-- RedHat: Completely redesigned their OpenShift CP PaaS to use Docker Containers and Kubernetes, and created Project Atomic
+Tutorials:
+- .magenta[ Basics ] - TODO
 
-- CoreOS: CoreOS, created the company 6 months after Docker was announced with a goal of providing **GIFFE**
-
-- Google: Kubernetes used for GCP
-
-- MicroSoft: Commited to port Docker to Windows (Windows Server 2016, Azure)
-
-- VMWare
-]
-
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
 ???
 SpeakerNotes:
-
-- CloudFoundry PaaS (Has it's own runC implementation: Garden/Guardian, orchestration; Diego)
-
-- OpenStack Magnum Project; Supports Docker Swarm, Apache Mesos and Kubernetes (concurrently) enabling
-   Infrastructure and Container Management.
-
-Note; App container management can scale out to existing nodes, but cannot manage infrastructure resources.
-OpenStack as a IaaS, via Ironic project can spin up new BM/VM/"LXD?" nodes to provide new resources.
-
 
 ---
 name: section_choosing
@@ -1686,7 +1715,7 @@ They support or are looking to support different runtime engines ( * )
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1716,6 +1745,11 @@ layout: false
 
 # Docker "Swarm Mode"
 
+Docker focus
+- Security
+- Portability (OS, Orch, Archi)
+- Ease of use
+
 Simple to use (despite underlying complexity)
 
 All-in-one container engine plus orchestration
@@ -1728,10 +1762,10 @@ Advanced networking
 
 Replication
 
-**DDC** (*Docker Data Center*) commercial product, supported by HPE
+** Docker-EE ** (*Enterprise Edition*) commercial product
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1766,7 +1800,7 @@ and Public Cloud Support
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1798,7 +1832,7 @@ Many frameworks available
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1812,7 +1846,7 @@ exclude: true
 
 ## Hands on ...
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1848,7 +1882,7 @@ Lab setup instructions [here](http://bit.ly/2674h5J)
 ]
 
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1866,7 +1900,7 @@ class: center, inverse
 <a href="https://containerorchestration.github.io/ContainerOrchestration/#1">
 https://containerorchestration.github.io/ContainerOrchestration/ </a>
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 
 ---
 name: section_resources
@@ -1874,7 +1908,7 @@ layout: false
 class: center, middle, inverse
 ## Resources
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1901,7 +1935,7 @@ layout: false
 | Manning   | [MEAP]<br/> [Kubernetes in Action](https://www.manning.com/books/kubernetes-in-action)          | Marko Lukša   |
 
 ]
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1926,7 +1960,7 @@ https://cncf.io/
 *"Kubernetes User Guide, Walkthrought"* - http://kubernetes.io/docs/user-guide/walkthrough/
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1942,6 +1976,8 @@ class: center, middle,
 
 ##Videos
 
+- [June 2017 - Container Orchestration Wars, Karl Isenberg, Mesosphere](https://www.youtube.com/watch?v=NRZ6N4e-Mko)
+
 - [June 2016 - Container Orchestration Wars, Karl Isenberg, Mesosphere](https://www.youtube.com/watch?v=C_u4_l84ED8)
 
 - [Mar 2016 - Container Orchestration with Kubernetes, Docker Swarm & Mesos-Marathon - Adrian Mouat, Container Solutions](https://www.youtube.com/watch?v=_uw1ISM_uRU)
@@ -1953,7 +1989,7 @@ class: center, middle,
 ]
 
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1966,7 +2002,7 @@ layout: false
 ]
 
 .right-column[
-## Documentation
+### Documentation - 1
 
   - **Getting started guides**
     - [Creating a Kubernetes Cluster](docs/getting-started-guides/README.md)
@@ -1980,7 +2016,7 @@ layout: false
 
 ]
 
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -1993,7 +2029,7 @@ layout: false
 ]
 
 .right-column[
-#### Documentation - 2
+### Documentation - 2
 
   - **Cluster administrator documentation**
     - for people who want to create a Kubernetes cluster and administer it
@@ -2011,7 +2047,7 @@ layout: false
   - **Contributions from the Kubernetes community**
     - in the [docs/contrib directory](contrib/)
 ]
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
 
@@ -2024,7 +2060,7 @@ layout: false
 ]
 
 .right-column[
-## Documentation 3
+### Documentation - 3
 
   - **Design documentation and design proposals**
     - to understand the design of Kubernetes, and feature proposals
@@ -2042,6 +2078,6 @@ out who's involved and how Kubernetes plays a role, read [their announcement](ht
 ement/2015/07/new-cloud-native-computing-foundation-drive-alignment-among-container).
 
 ]
-.footnote[.vlightgray[ @hguemar @mjbright @mariolet ]]
+.footnote[.vlightgray[ @mjbright ]]
 ???
 SpeakerNotes:
